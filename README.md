@@ -1,6 +1,7 @@
 #Glaze
 
 __Description__
+
 Fairly old project I made for my masters. 
 It's a visualization framework for mobile devices that is based on the information visualization reference model. It uses a plugin architecture to allow for dynamic visualization setup. 
 A paper detailing this can be found [here](http://www.whereveriam.org/work/UMa/Sousa-Nisi-Oakley-Glaze.pdf).
@@ -11,6 +12,7 @@ The project already has a couple of visualizations used as a test case:
 * Second is the information overlay visualization is the classic example to realize all the requirements asked for the project. It consists of overlaying on top of the camera feed information about what we are currently seeing, from general knowledge, related events, geographical information to comments from other people that have also seen it.  The objective of this visualization is to present relevant or interesting information about what is around the user. There are obvious uses for tourism as a way of exploration and discovery of foreign places. This visualization uses the same hardware as the night vision allowing for complete component reuse without any change within them.  
 
 __Instalation__
+
 This project was developed in a windows system using Visual Studio (2005 I remember correcly) for the Nokia N95.
 As long as the directory structure present in this folder is maitained and the SDK is properly installed there shouldn't be any problems compiling.
 The target phone must have SyExpat dll instaled for Glaze to run. Simply install the provided sisx file (expatinstall.sisx) on the phone and everything should be fine.
