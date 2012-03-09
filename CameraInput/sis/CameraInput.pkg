@@ -1,0 +1,23 @@
+;----------------------------------------------------------------------------
+;
+;    Input.pkg - installation file
+;    
+;----------------------------------------------------------------------------
+
+;Language - standard language definitions
+&EN
+
+; Package header (English only, add other languages here)
+#{"CameraInput DLL"}, (0xed54df77), 1, 0, 0
+
+;Localised Vendor name
+%{"Vendor Name-EN"}
+
+;Unique Vendor name
+:"Vendor Name"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+; Language independent files
+"C:\S60\devices\S60_3rd_FP2_SDK_v1.1\epoc32\release\gcce\udeb\CameraInput.dll"-"!:\sys\bin\CameraInput.dll"

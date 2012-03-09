@@ -1,0 +1,68 @@
+/*
+============================================================================
+ Name		: Glaze_Core.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for Glaze_Core.
+============================================================================
+*/
+
+
+TARGET			Glaze_Core_0xE3243CFD.exe
+TARGETTYPE		exe
+UID		  0x100039CE 0xE3243CFD
+
+SOURCEPATH		..\src
+SOURCE			Glaze_Core.cpp
+SOURCE			Glaze_CoreApplication.cpp
+SOURCE			Glaze_CoreAppView.cpp
+SOURCE			Glaze_CoreAppUi.cpp
+SOURCE			Glaze_CoreDocument.cpp
+
+SOURCEPATH		..\data
+
+START RESOURCE	Glaze_Core.rss
+HEADER
+TARGET Glaze_Core_0xE3243CFD
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	Glaze_Core_reg.rss
+TARGET Glaze_Core_0xE3243CFD_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+
+USERINCLUDE	   ..\inc
+USERINCLUDE    ..\help ..\..\Libraries\SyExpat
+
+SYSTEMINCLUDE	 \epoc32\include
+
+LIBRARY		   euser.lib
+LIBRARY		   apparc.lib
+LIBRARY		   cone.lib
+LIBRARY		   eikcore.lib
+LIBRARY		   avkon.lib
+LIBRARY		   commonengine.lib
+LIBRARY		   efsrv.lib 
+LIBRARY		   estor.lib
+LIBRARY        aknnotify.lib
+LIBRARY        hlplch.lib SyExpat.lib
+ 
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE3243CFD
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+// End of File
+SOURCEPATH ..\src
+SOURCE Core.cpp XMLHelper.cpp XMLBuffer.cpp VisualizationLib.cpp LibraryManager.cpp
+SOURCEPATH ..\src
+SOURCE LocalLibrary.cpp
+
+CAPABILITY LocalServices UserEnvironment

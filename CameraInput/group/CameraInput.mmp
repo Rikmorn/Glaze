@@ -1,0 +1,28 @@
+/*
+============================================================================
+ Name        : Input.mmp
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for InputDll.
+============================================================================
+*/
+
+TARGET          CameraInput.dll
+TARGETTYPE      dll
+UID 0x1000008d 0xed54df77
+SECUREID        0xe5866fec
+
+USERINCLUDE     ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH      ..\src
+SOURCE          CameraInput.cpp
+
+LIBRARY         euser.lib
+LIBRARY         estor.lib ecam.lib fbscli.lib
+
+VENDORID        0
+EXPORTUNFROZEN
+
+CAPABILITY LocalServices UserEnvironment

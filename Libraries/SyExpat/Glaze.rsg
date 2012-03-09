@@ -1,0 +1,6 @@
+#define R_GLAZE_MENUBAR                           0x8f6f004
+#define R_GLAZE_EXIT                              0x8f6f005
+#define R_GLAZE_MENU                              0x8f6f006
+#define R_GLAZE_SHADING_MENU                      0x8f6f007
+#define R_GLAZE_DRAWING_MENU                      0x8f6f008
+#define R_GLAZE_LOCALISABLE_APP_INFO              0x8f6f009

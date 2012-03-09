@@ -1,0 +1,38 @@
+/*
+============================================================================
+ Name        : OpenGLFEDll.mmp
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for OpenGLFEDll.
+============================================================================
+*/
+TARGET                                  OpenGLFE.dll 
+TARGETTYPE                              dll 
+UID                                     0x1000008d 0xedeff988 
+SECUREID                                0xe9d8c944 
+USERINCLUDE                             ..\..\Libraries\GLUtils 
+USERINCLUDE                             ..\inc 
+SYSTEMINCLUDE                           \epoc32\include 
+SOURCEPATH                              ..\..\Libraries\GLUtils 
+SOURCE                                  Textureutils.cpp 
+SOURCE                                  Mathutils.cpp 
+SOURCE                                  Glutils.cpp 
+SOURCE                                  Utils3d.cpp 
+
+SOURCEPATH                              ..\src 
+SOURCE                                  OpenGLFEDll.cpp 
+
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 fbscli.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 ImageConversion.lib 
+LIBRARY                                 cone.lib 
+LIBRARY                                 ws32.lib 
+LIBRARY                                 libgles_cm.lib 
+LIBRARY                                 euser.lib 
+LIBRARY                                 estor.lib 
+VENDORID                                0 
+EXPORTUNFROZEN                           
+
+CAPABILITY LocalServices UserEnvironment

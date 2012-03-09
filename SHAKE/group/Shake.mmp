@@ -1,0 +1,34 @@
+/*
+============================================================================
+ Name        : Input.mmp
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for InputDll.
+============================================================================
+*/
+
+TARGET          Shake.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xeb27df77
+SECUREID        0xe5866fec
+
+USERINCLUDE     ..\inc ..\..\Libraries\Bluetooth 
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH      ..\src
+SOURCE          Shake.cpp
+
+LIBRARY         euser.lib
+LIBRARY         estor.lib esock.lib bluetooth.lib btmanclient.lib sdpagent.lib sdpdatabase.lib charconv.lib estlib.lib
+
+VENDORID        0
+EXPORTUNFROZEN
+
+SOURCEPATH ..\..\Libraries\Bluetooth 
+SOURCE BluetoothEngine.cpp Connector.cpp DeviceDiscoverer.cpp Listener.cpp ServiceAdvertiser.cpp ServiceDiscoverer.cpp
+
+CAPABILITY LocalServices UserEnvironment
+
+SOURCEPATH ..\src
+SOURCE ShakeParser.cpp

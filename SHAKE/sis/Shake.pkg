@@ -1,0 +1,23 @@
+;----------------------------------------------------------------------------
+;
+;    Input.pkg - installation file
+;    
+;----------------------------------------------------------------------------
+
+;Language - standard language definitions
+&EN
+
+; Package header (English only, add other languages here)
+#{"Shake DLL"}, (0xeb27df77), 1, 0, 0
+
+;Localised Vendor name
+%{"Vendor Name-EN"}
+
+;Unique Vendor name
+:"Vendor Name"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+; Language independent files
+"$(EPOCROOT)epoc32\release\$(PLATFORM)\$(TARGET)\Shake.dll"-"!:\sys\bin\Shake.dll"

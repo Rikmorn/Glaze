@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name		: Glaze_Core.hrh
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This file contains declarations for constants of Glaze_Core.
+ The file can be included in C++ or resource file.
+ ============================================================================
+ */
+#ifndef GLAZE_CORE_HRH
+#define GLAZE_CORE_HRH
+
+#define _UID3 0xE3243CFD
+
+// Glaze_Core enumerate command codes
+enum TGlaze_CoreIds {
+	ECommand1 = 0x6001, // start value must not be 0
+	ECommand2,
+	EHelp,
+	EAbout
+};
+
+#endif // __GLAZE_CORE_HRH__

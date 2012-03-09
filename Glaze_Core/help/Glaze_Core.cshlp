@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE cshproj SYSTEM "/epoc32/tools/cshlpcmp/dtd/cshproj.dtd">
+<?xml:stylesheet href="/epoc32/tools/cshlpcmp/xsl/CSHproj.xsl" title="CS-Help project" type="text/xsl"?>
+<cshproj>
+<helpfileUID>0xE3243CFD</helpfileUID>
+<directories>
+	<input></input>
+	<output></output>
+	<graphics></graphics>
+	<working>temp\</working>
+</directories>
+<files>
+	<source>
+	<xmlfile>Glaze_Core.xml</xmlfile>
+	</source>
+	<destination>Glaze_Core_0xE3243CFD.hlp</destination>
+	<customization>custom.xml</customization>
+	</files>
+</cshproj>

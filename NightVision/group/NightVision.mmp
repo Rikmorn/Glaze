@@ -1,0 +1,53 @@
+/*
+============================================================================
+ Name        : Visualization.mmp
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for Visualization.
+============================================================================
+*/
+TARGET                                  NightVision.dll 
+TARGETTYPE                              dll 
+UID 0x1000008d 0xe44e7686
+SECUREID                                0xee7f0807 
+USERINCLUDE                             ..\inc
+USERINCLUDE                             ..\..\Libraries\GLUtils
+USERINCLUDE                             ..\..\Libraries\GlazeUtils
+USERINCLUDE                             ..\..\Libraries\Bluetooth 
+SYSTEMINCLUDE                           \epoc32\include 
+
+SOURCEPATH                              ..\src 
+SOURCE                                  NightVision.cpp
+SOURCEPATH								..\..\Libraries\GLUtils
+SOURCE									Glutils.cpp
+SOURCE									Mathutils.cpp
+SOURCE									Textureutils.cpp
+SOURCE									Utils3d.cpp
+SOURCEPATH								..\..\Libraries\GlazeUtils
+SOURCE									GlazeFont.cpp
+SOURCE									GlazeTextures.cpp
+SOURCEPATH								..\..\Libraries\Bluetooth
+SOURCE									BluetoothEngine.cpp
+SOURCE									Connector.cpp
+SOURCE									DeviceDiscoverer.cpp
+SOURCE									Listener.cpp
+SOURCE									ServiceAdvertiser.cpp
+SOURCE									ServiceDiscoverer.cpp
+
+LIBRARY                                 ws32.lib 
+LIBRARY                                 fbscli.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 cone.lib 
+LIBRARY                                 ImageConversion.lib 
+LIBRARY                                 libgles_cm.lib 
+LIBRARY                                 euser.lib 
+LIBRARY                                 estor.lib bluetooth.lib esock.lib lbs.lib btmanclient.lib sdpagent.lib sdpdatabase.lib 
+VENDORID                                0 
+EXPORTUNFROZEN                           
+
+CAPABILITY LocalServices UserEnvironment
+
+SOURCEPATH ..\src
+SOURCE GlazeAnimation.cpp GlazeMesh.cpp
